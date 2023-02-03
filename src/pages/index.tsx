@@ -29,8 +29,8 @@ export default function Home() {
       <Stack
         mt={10}
         mx="auto"
-        w={['100vw',490,600,700,900, 1000]}
-        maxW={1000}
+        w={['100vw',490,700,900,1100]}
+        maxW={1100}
         bg="#1c1458"
         direction="column"
       >
