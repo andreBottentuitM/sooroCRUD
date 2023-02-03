@@ -17,11 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
 <Component {...pageProps} />
-<style jsx global>{`
-  body {
-    background-color: #120d38;
-  }
-`}</style>
     </ChakraProvider>
   )
 }

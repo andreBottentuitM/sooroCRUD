@@ -26,6 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Box bg={"#120d39"}>
       <Stack
         mt={10}
         mx="auto"
@@ -34,9 +35,10 @@ export default function Home() {
         bg="#1c1458"
         direction="column"
       >
+
         <Header />
+
         <Flex justify="end" w="100%">
-          
           <Button
             mr={5}
             leftIcon={<AddIcon />}
@@ -44,7 +46,6 @@ export default function Home() {
             variant="outline"
             w="239px"
             mt={100}
-         
           >
             Adicionar Colaborador
           </Button>
@@ -53,7 +54,7 @@ export default function Home() {
         <Text fontSize="xl" color="#ffffff" ml={30}>Colaboradores:</Text>
         </Box>
         <Box overflowY="auto">
-          <TableContainer bg="white" w={855} mx="auto" mb={10} borderRadius={5}>
+          <TableContainer bg="white" w={1050} mx="auto" mb={10} borderRadius={5}>
             <Table variant="simple" >
               <Thead>
                 <Tr textAlign="center" fontWeight="bold">
@@ -71,6 +72,7 @@ export default function Home() {
           </TableContainer>
         </Box>
       </Stack>
+      </Box>
       <ModalAdd/>
       <ModalEdit/>
     </>
